@@ -66,7 +66,7 @@ test: build clean
 
 clean:
 	@echo ">>>  Cleaning build cache"
-	-rm -r $(BINDIR) 2> NUL
+	-rm -r $(BINDIR) 2> /dev/null
 	go clean ./...
 
 win-build:
